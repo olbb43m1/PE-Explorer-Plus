@@ -1,0 +1,71 @@
+# PE Explorer+ License
+
+Copyright (c) 2026 Olbb43m1. All rights reserved.
+
+PE Explorer+ is proprietary software.
+
+By downloading, installing, copying, or using this software, you agree to the following terms.
+
+## 1. Permitted Use
+
+You may use PE Explorer+ for any lawful purpose, including but not limited to:
+
+* Personal use
+* Internal business use
+* Education and training
+* Academic research
+* Malware analysis
+* Reverse engineering
+* Digital forensics
+* Incident response
+* Vulnerability research
+* Penetration testing
+* Security consulting
+* Customer projects
+* Software analysis
+
+## 2. Redistribution
+
+You may redistribute the original, unmodified release package obtained from the official distribution source.
+
+You may not:
+
+* Modify and redistribute the software
+* Redistribute individual files from the release package
+* Remove or modify this license
+* Misrepresent the origin of the software
+
+## 3. Commercial Restrictions
+
+You may not:
+
+* Sell this software
+* Sell licenses for this software
+* Include this software as part of a commercial software product for resale
+* Offer this software as a hosted or Software-as-a-Service (SaaS) solution
+
+Commercial use of the software itself requires prior written permission from the copyright holder.
+
+Using PE Explorer+ as a tool while performing professional work, consulting, research, malware analysis, penetration testing, incident response, digital forensics, or customer projects is permitted.
+
+## 4. Third-Party Components
+
+PE Explorer+ includes or integrates third-party software.
+
+Their respective licenses remain the property of their original authors.
+
+See **THIRD_PARTY_NOTICES.md** for details.
+
+## 5. Disclaimer
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF THE SOFTWARE.
+
+## 6. Termination
+
+Any use of this software in violation of this license automatically terminates the permissions granted under this license.
+
+## 7. Contact
+
+For licensing inquiries or commercial licensing requests, please contact the copyright holder.
