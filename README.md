@@ -33,6 +33,13 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
+## ✨ What's New (v1.1.0)
+
+- Rich Header Analysis
+  -> Detect and analyze Rich Header structures with raw and decoded hex views.
+
+---
+
 ## Features
 
 * PE structure analysis (PE32 / PE32+)
@@ -47,6 +54,12 @@ It combines essential PE inspection features with compiler identification, embed
 ---
 
 ## Screenshots
+
+### Rich Header Analysis
+
+Parse Rich Header structures and display raw and decoded hex data.
+
+![Rich Header Analysis](docs/images/rich-header.png)
 
 ### Embedded PE Detection & Dumping
 
