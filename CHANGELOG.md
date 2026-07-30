@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.0
+
+### Features
+
+- Rich Header analysis
+
 ## v1.0.0
 
 Initial public release.
