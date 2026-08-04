@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2.0
+
+### Features
+
+- Advanced Strings Viewer
+  - IP address and URL filtering
+  - Registry path filtering
+  - File path filtering
+
 ## v1.1.0
 
 ### Features
