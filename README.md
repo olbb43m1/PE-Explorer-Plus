@@ -33,10 +33,10 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.1.0)
+## ✨ What's New (v1.2.0)
 
-- Rich Header Analysis
-  -> Detect and analyze Rich Header structures with raw and decoded hex views.
+- Advanced Strings Viewer
+  - Quickly identify IOCs with dedicated filters for IP addresses, URLs, registry paths, and file paths.
 
 ---
 
