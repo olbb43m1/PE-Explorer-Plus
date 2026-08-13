@@ -33,11 +33,12 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.2.0)
+## ✨ What's New (v1.3.0)
 
-- Advanced Strings Viewer
-  - Quickly identify IOCs with dedicated filters for IP addresses, URLs, registry paths, and file paths.
-
+- Go Metadata Viewer
+  - Go binary metadata analysis
+  - Function tree visualization
+  - Structural analysis and function tree reconstruction for Garble-obfuscated binaries
 ---
 
 ## Features
@@ -50,6 +51,7 @@ It combines essential PE inspection features with compiler identification, embed
 * Advanced Strings Viewer
 * Resource Viewer
 * .NET Metadata Viewer
+* Go Metadata Viewer
 
 ---
 
@@ -90,6 +92,14 @@ Inspect executable resources including icons, dialogs, menus, bitmaps, and Delph
 Explore .NET metadata tables, streams, and assembly information.
 
 ![.NET Metadata Viewer](docs/images/dotnet-metadata.png)
+
+---
+
+### Go Metadata Viewer
+
+Explore Go binary metadata and function trees. Function trees can be reconstructed through structural analysis even in binaries obfuscated with Garble.
+
+![Go Metadata Viewer](docs/images/go-metadata.png)
 
 ---
 
