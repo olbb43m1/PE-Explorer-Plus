@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.3.0
+
+### Features
+
+- Go Metadata Viewer
+  - Go binary metadata analysis
+  - Function tree visualization
+  - Structural analysis and function tree reconstruction for Garble-obfuscated binaries
+
 ## v1.2.0
 
 ### Features
