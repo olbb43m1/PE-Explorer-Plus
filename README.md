@@ -29,7 +29,7 @@ PE Explorer+ is designed to simplify PE analysis without sacrificing the informa
 
 Instead of relying on multiple utilities, PE Explorer+ brings common PE analysis workflows into a single application.
 
-It combines essential PE inspection features with compiler identification, embedded executable detection, digital signature verification, .NET metadata inspection, UPX unpacking, and an advanced strings viewer in a clean and responsive interface.
+It combines essential PE inspection features with compiler identification, embedded executable detection, digital signature verification, .NET metadata inspection, Go metadata and function tree analysis, UPX unpacking, and an advanced strings viewer in a clean and responsive interface.
 
 ---
 
