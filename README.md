@@ -68,45 +68,13 @@ Parse Rich Header structures and display raw and decoded hex data.
 
 ![Rich Header Analysis](docs/images/rich-header.png)
 
+
 ### Embedded PE Detection & Dumping
 
 Detect embedded PE files inside executables and extract them with a single click.
 
 ![Embedded PE Detection & Dumping](docs/images/embedded-files.png)
 
----
-
-### Advanced Strings Viewer
-
-Browse ASCII and Unicode strings with filtering and search capabilities.
-
-![Advanced Strings Viewer](docs/images/strings.png)
-
----
-
-### Resource Viewer
-
-Inspect executable resources including icons, dialogs, menus, bitmaps, and Delphi forms.
-
-![Resource Viewer](docs/images/resource-viewer.png)
-
----
-
-### .NET Metadata Viewer
-
-Explore .NET metadata tables, streams, and assembly information.
-
-![.NET Metadata Viewer](docs/images/dotnet-metadata.png)
-
----
-
-### Go Metadata Viewer
-
-Explore Go binary metadata and function trees. Function trees can be reconstructed through structural analysis even in binaries obfuscated with Garble.
-
-![Go Metadata Viewer](docs/images/go-metadata.png)
-
----
 
 ### Hex View
 
@@ -114,20 +82,47 @@ Examine file contents with a built-in hexadecimal viewer.
 
 ![Hex View](docs/images/hex-view.png)
 
----
-### [Bonus] ELF Structure Analysis
 
-Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files. Go binary analysis and UPX unpacking are also supported.
+### Advanced Strings Viewer
 
-![ELF Viewer](docs/images/elf.png)
+Browse ASCII and Unicode strings with filtering and search capabilities.
 
----
+![Advanced Strings Viewer](docs/images/strings.png)
+
+
+### Resource Viewer
+
+Inspect executable resources including icons, dialogs, menus, bitmaps, and Delphi forms.
+
+![Resource Viewer](docs/images/resource-viewer.png)
+
+
+### .NET Metadata Viewer
+
+Explore .NET metadata tables, streams, and assembly information.
+
+![.NET Metadata Viewer](docs/images/dotnet-metadata.png)
+
+
+### Go Metadata Viewer
+
+Explore Go binary metadata and function trees. Function trees can be reconstructed through structural analysis even in binaries obfuscated with Garble.
+
+![Go Metadata Viewer](docs/images/go-metadata.png)
+
 
 ### Generic File Viewer
 
 Even for unsupported files, Hex View and Strings Viewer remain available for quick inspection.
 
 ![Generic File Viewer](docs/images/generic-file.png)
+
+
+### [Bonus] ELF Structure Analysis
+
+Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files. Go binary analysis and UPX unpacking are also supported.
+
+![ELF Viewer](docs/images/elf.png)
 
 ---
 
