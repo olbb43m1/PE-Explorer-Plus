@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.4.0
+
+### Features
+
+- ELF structure analysis
+  - ELF metadata analysis
+  - Symbol analysis
+  - Import / Export analysis
+  - Relocation analysis
+  - Embedded file identification
+  - UPX-packed ELF unpacking
+  - Extended Go binary analysis to ELF
+
 ## v1.3.0
 
 ### Features
