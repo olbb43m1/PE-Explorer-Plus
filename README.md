@@ -33,12 +33,16 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.3.0)
+## ✨ What's New (v1.4.0)
 
-- Go Metadata Viewer
-  - Go binary metadata analysis
-  - Function tree visualization
-  - Structural analysis and function tree reconstruction for Garble-obfuscated binaries
+- **[Bonus]** ELF structure analysis
+  - ELF metadata analysis
+  - Symbol analysis
+  - Import / Export analysis
+  - Relocation analysis
+  - Embedded file identification
+  - UPX-packed ELF unpacking
+  - Extended Go binary analysis to ELF
 ---
 
 ## Features
@@ -52,6 +56,7 @@ It combines essential PE inspection features with compiler identification, embed
 * Resource Viewer
 * .NET Metadata Viewer
 * Go Metadata Viewer
+* **[Bonus]** ELF structure analysis
 
 ---
 
@@ -110,12 +115,19 @@ Examine file contents with a built-in hexadecimal viewer.
 ![Hex View](docs/images/hex-view.png)
 
 ---
+### [Bonus] ELF Structure Analysis
 
-### Non-PE Viewer
+Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files. Go binary analysis and UPX unpacking are also supported.
 
-Even for non-PE files, Hex View and Strings Viewer remain available for quick inspection.
+![ELF Viewer](docs/images/elf.png)
 
-![Non-PE Viewer](docs/images/non-pe.png)
+---
+
+### Generic File Viewer
+
+Even for unsupported files, Hex View and Strings Viewer remain available for quick inspection.
+
+![Generic File Viewer](docs/images/generic-file.png)
 
 ---
 
