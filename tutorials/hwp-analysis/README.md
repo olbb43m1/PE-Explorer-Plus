@@ -15,19 +15,19 @@ Each case demonstrates how PE Explorer+ can help identify suspicious content and
 
 ## Case 1: Macro
 
-![Case 1 - Macro](hwp-analysis/images/Case-1-Macro/fig-1.png)
+![Case 1 - Macro](images/Case-1-Macro/fig-1.png)
 
 When the file is opened, PE Explorer+ displays basic document information along with potentially suspicious items.
 
 A suspicious script has been detected in this sample. Let's follow the link to take a closer look.
 
-![Case 1 - Macro Script](hwp-analysis/images/Case-1-Macro/fig-2.png)
+![Case 1 - Macro Script](images/Case-1-Macro/fig-2.png)
 
 Following the link takes us directly to the decompressed stream, where its contents can be inspected as text.
 
 A quick look at the script reveals that it attempts to execute an encoded payload using PowerShell.
 
-![Case 1 - Decoded Payload](hwp-analysis/images/Case-1-Macro/fig-3.png)
+![Case 1 - Decoded Payload](images/Case-1-Macro/fig-3.png)
 
 We can copy the encoded data into **CyberChef** and decode it.
 
@@ -37,7 +37,7 @@ The result reveals the final payload—in this case, PowerShell code—that the 
 
 ## Case 2: EPS
 
-![Case 2 - EPS](hwp-analysis/images/Case-2-EPS/fig-1.png)
+![Case 2 - EPS](images/Case-2-EPS/fig-1.png)
 
 Next, let's examine a sample that uses an **EPS (Encapsulated PostScript)** exploit technique, which was once widely used in malicious HWP campaigns.
 
@@ -45,7 +45,7 @@ These attacks typically embed a crafted EPS/PostScript object in the HWP documen
 
 PE Explorer+ flags a file under `BinData` as suspicious. Let's follow the link and inspect it.
 
-![Case 2 - EPS Stream](hwp-analysis/images/Case-2-EPS/fig-2.png)
+![Case 2 - EPS Stream](images/Case-2-EPS/fig-2.png)
 
 In the decompressed stream, we can see PostScript code along with an encoded payload.
 
@@ -53,7 +53,7 @@ Looking more closely at the script reveals that the payload is XOR-decoded using
 
 Let's decode the payload using **CyberChef**.
 
-![Case 2 - EPS Payload](hwp-analysis/images/Case-2-EPS/fig-3.png)
+![Case 2 - EPS Payload](images/Case-2-EPS/fig-3.png)
 
 The decoded data reveals the final payload—shellcode—intended to be executed as part of the exploitation chain involving the external PostScript processing component.
 
@@ -61,13 +61,13 @@ The decoded data reveals the final payload—shellcode—intended to be executed
 
 ## Case 3: OLE
 
-![Case 3 - OLE](hwp-analysis/images/Case-3-OLE/fig-1.png)
+![Case 3 - OLE](images/Case-3-OLE/fig-1.png)
 
 Now let's examine a malicious document containing an embedded **OLE object**, a technique that continues to appear in malicious documents.
 
 Click the `BinData → BIN0002.OLE` link to inspect the embedded object.
 
-![Case 3 - OLE Signature](hwp-analysis/images/Case-3-OLE/fig-2.png)
+![Case 3 - OLE Signature](images/Case-3-OLE/fig-2.png)
 
 The decompressed stream shows the familiar OLE/CFB signature:
 
@@ -75,24 +75,24 @@ The decompressed stream shows the familiar OLE/CFB signature:
 
 PE Explorer+ can load the embedded OLE object directly using the **Open as new tab** button.
 
-![Case 3 - OLE Streams](hwp-analysis/images/Case-3-OLE/fig-3.png)
+![Case 3 - OLE Streams](images/Case-3-OLE/fig-3.png)
 
 The OLE object contains two streams:
 
 - `CompObj`
 - `Ole10Native`
 
-![Case 3 - Ole10Native](hwp-analysis/images/Case-3-OLE/fig-4.png)
+![Case 3 - Ole10Native](images/Case-3-OLE/fig-4.png)
 
 Opening the `Ole10Native` stream reveals a file path followed by PE data.
 
 We could extract the PE data manually using the dump functionality, but PE Explorer+ provides an easier way to access it through the **Embedded Files** feature.
 
-![Case 3 - Embedded Files](hwp-analysis/images/Case-3-OLE/fig-5.png)
+![Case 3 - Embedded Files](images/Case-3-OLE/fig-5.png)
 
 Under **Embedded Files**, click **Open as new tab** to load the detected PE file directly.
 
-![Case 3 - Final PE Payload](hwp-analysis/images/Case-3-OLE/fig-6.png)
+![Case 3 - Final PE Payload](images/Case-3-OLE/fig-6.png)
 
 We have now reached the final payload: the PE file embedded inside the OLE object.
 
@@ -100,7 +100,7 @@ We have now reached the final payload: the PE file embedded inside the OLE objec
 
 ## Case 4: Exploit
 
-![Case 4 - Exploit](hwp-analysis/images/Case-4-Exploit/fig-1.png)
+![Case 4 - Exploit](images/Case-4-Exploit/fig-1.png)
 
 Finally, let's look at an exploit targeting a vulnerability in the HWP application itself.
 
@@ -108,7 +108,7 @@ When the sample is opened, PE Explorer+ identifies suspicious records across mul
 
 Let's select one of them for further analysis.
 
-![Case 4 - Suspicious Record](hwp-analysis/images/Case-4-Exploit/fig-2.png)
+![Case 4 - Suspicious Record](images/Case-4-Exploit/fig-2.png)
 
 One of the `Paragraph Text` records is unusually large—approximately **18 MB**.
 
@@ -122,13 +122,13 @@ Double-clicking the **Offset** field jumps directly to the corresponding locatio
 >
 > For analysis, PE Explorer+ identifies the required encryption key and automatically decrypts and decompresses the protected streams.
 
-![Case 4 - NOP Sled](hwp-analysis/images/Case-4-Exploit/fig-3.png)
+![Case 4 - NOP Sled](images/Case-4-Exploit/fig-3.png)
 
 The stream contains a large amount of repetitive data.
 
 This pattern forms a **NOP sled**, which increases the likelihood that execution redirected into the affected memory region will eventually reach the intended payload after successful exploitation.
 
-![Case 4 - Shellcode](hwp-analysis/images/Case-4-Exploit/fig-4.png)
+![Case 4 - Shellcode](images/Case-4-Exploit/fig-4.png)
 
 Following the NOP sled, we can identify the shellcode that is intended to execute as part of the exploit.
 
