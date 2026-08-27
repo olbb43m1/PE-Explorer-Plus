@@ -33,16 +33,17 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.4.0)
+## ✨ What's New (v1.5.0)
 
-- **[Bonus]** ELF structure analysis
-  - ELF metadata analysis
-  - Symbol analysis
-  - Import / Export analysis
-  - Relocation analysis
-  - Embedded file identification
-  - UPX-packed ELF unpacking
-  - Extended Go binary analysis to ELF
+- **[Bonus]** Document structure analysis (HWP) · [Tutorial](tutorials/hwp-analysis/)
+  - HWP metadata analysis
+  - CFB storage / stream analysis
+  - Record structure analysis
+  - Automatic stream decompression
+  - Distribution document decryption
+  - Suspicious content identification
+  - Embedded file / OLE object analysis
+  - Macro / Script analysis
 ---
 
 ## Features
@@ -57,6 +58,7 @@ It combines essential PE inspection features with compiler identification, embed
 * .NET Metadata Viewer
 * Go Metadata Viewer
 * **[Bonus]** ELF structure analysis
+* **[Bonus]** Document structure analysis (HWP)
 
 ---
 
@@ -124,6 +126,12 @@ Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files.
 
 ![ELF Viewer](docs/images/elf.png)
 
+
+### [Bonus] Document Structure Analysis (HWP) · [Tutorial](tutorials/hwp-analysis/)
+
+Analyze HWP document structures, metadata, embedded files, OLE objects, macros/scripts, and suspicious content. Automatic stream decompression and distribution document decryption are also supported.
+
+![HWP Structure Analysis](docs/images/hwp-analysis.png)
 ---
 
 ## Quick Demo
