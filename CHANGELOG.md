@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.5.0
+
+### Features
+
+- Document structure analysis (HWP)
+  - HWP metadata analysis
+  - CFB storage / stream analysis
+  - Record structure analysis
+  - Automatic stream decompression
+  - Distribution document decryption
+  - Suspicious content identification
+  - Embedded file / OLE object analysis
+  - Macro / Script analysis
+
 ## v1.4.0
 
 ### Features
