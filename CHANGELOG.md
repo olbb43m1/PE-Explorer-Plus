@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.6.0
+
+### Features
+
+- Document structure analysis (DOC)
+
+  - DOC metadata analysis
+  - CFB storage / stream analysis
+  - Embedded file / OLE object analysis
+  - VBA macro identification and extraction
+  - VBA macro source code viewer
+  - Static VBA macro deobfuscation
+    - Constant folding and propagation
+    - Obfuscated string reconstruction
+    - Common VBA expression and built-in function evaluation
+    - Simple control-flow simplification
+  - Suspicious macro behavior identification
+
 ## v1.5.0
 
 ### Features
