@@ -10,7 +10,7 @@ deobfuscation.
 
 ## Case 1
 
-\<images/Case-1/fig-1.png\>
+![Case 1-1](images/Case-1/fig-1.png)
 
 When the sample is opened, PE Explorer+ displays basic document
 information along with suspicious elements detected in the file,
@@ -25,11 +25,9 @@ and prevent them from correctly locating or extracting VBA macros.
 Despite the manipulated stream metadata, PE Explorer+ successfully
 identifies and extracts the macro streams.
 
-Let's start by clicking:
+Let's start by clicking: `Macros → VBA → ThisDocument`
 
-`Macros → VBA → ThisDocument`
-
-\<images/Case-1/fig-2.png\>
+![Case 1-2](images/Case-1/fig-2.png)
 
 The **Default** tab shows the original VBA source code. As shown above,
 a number of repetitive comment strings have been inserted
@@ -39,27 +37,28 @@ cumbersome.
 Elements that are irrelevant to the actual program logic are removed in
 the **Deobfuscated** view.
 
-\<images/Case-1/fig-3.png\>
+![Case 1-3](images/Case-1/fig-3.png)
 
 With the unnecessary comments removed, the resulting source code is significantly more readable, making the actual macro logic easier to inspect.
 
 ## Case 2
 
-\<images/Case-2/fig-1.png\>
+![Case 2-1](images/Case-2/fig-1.png)
 
-The second sample contains two VBA macro streams. The main execution
-logic is located in `ThisDocument`.
+The second sample contains two VBA macro streams.
 
-\<images/Case-2/fig-2.png\>
+The main execution logic is located in `ThisDocument`.
+
+![Case 2-2](images/Case-2/fig-2.png)
 
 The macro uses lightweight string obfuscation to hide parts of its
 behavior.
 
 Let's switch to the **Deobfuscated** tab.
 
-\<images/Case-2/fig-3.png\>
+![Case 2-3](images/Case-2/fig-3.png)
 
-Potentially suspicious constructs are highlighted at the top of the
+Potentially suspicious indicators are highlighted at the top of the
 analysis view, allowing analysts to quickly identify code that deserves
 further investigation.
 
@@ -73,40 +72,34 @@ manually reconstructing each string.
 
 ## Case 3
 
-\<images/Case-3/fig-1.png\>
+![Case 3-1](images/Case-3/fig-1.png)
 
 In this sample, we can immediately see that the document contains two
 VBA macros and one embedded object.
 
-Let's open:
+Let's open: `Macros → VBA → ThisDocument`
 
-`Macros → VBA → ThisDocument`
-
-\<images/Case-3/fig-2.png\>
+![Case 3-2](images/Case-3/fig-2.png)
 
 The macro constructs a string, stores the result in the `EYGASUID`
 variable, and passes it to the `Mshduwh` function in `Module1`.
 
-After resolving the string construction, the resulting value is:
-
-`%TEMP%\8tr.exe`
+After resolving the string construction, the resulting value is `%TEMP%\8tr.exe`
 
 This strongly suggests that the macro expects an executable payload at
 that location.
 
 Let's follow both the function reference and the embedded file.
 
-\<images/Case-3/fig-3.png\>
+![Case 3-3](images/Case-3/fig-3.png)
 
 The `Mshduwh` function in `Module1` is straightforward: it receives the
 string as an argument and passes it to the VBA `Shell` function for
 execution.
 
-In other words, the macro ultimately attempts to execute:
+In other words, the macro ultimately attempts to execute `%TEMP%\8tr.exe`
 
-`%TEMP%\8tr.exe`
-
-\<images/Case-3/fig-4.png\>
+![Case 3-4](images/Case-3/fig-4.png)
 
 The `8tr.exe` payload can be found inside the document's `ObjectPool`
 storage.
@@ -115,7 +108,7 @@ PE Explorer+ allows the embedded file to be loaded directly through the
 **Open as new tab** button, making it possible to continue the analysis
 without manually extracting and reopening the payload.
 
-\<images/Case-3/fig-5.png\>
+![Case 3-5](images/Case-3/fig-5.png)
 
 Once loaded, PE Explorer+ provides basic static analysis information for
 the embedded PE binary, including its **resources**, **strings**, and
@@ -126,12 +119,12 @@ document to inspecting its embedded executable payload.
 
 ## Case 4
 
-\<images/Case-4/fig-1.png\>
+![Case 4-1](images/Case-4/fig-1.png)
 
 The final sample contains four VBA macros, with the main execution logic
 located in `ThisDocument`.
 
-\<images/Case-4/fig-2.png\>
+![Case 4-2](images/Case-4/fig-2.png)
 
 The macro references three properties from the `TadaSHC` module:
 
@@ -145,7 +138,7 @@ Let's examine where these values come from.
 
 The Label controls are stored in the `TadaSHC.f` stream.
 
-\<images/Case-4/fig-3.png\>
+![Case 4-3](images/Case-4/fig-3.png)
 
 The internal structure of the `f` stream is not particularly simple, but
 even basic string extraction can reveal useful artifacts.
@@ -158,7 +151,7 @@ In this sample, the relevant Label values resolve to:
 These strings provide important clues about how the macro executes the
 next stage.
 
-\<images/Case-4/fig-4.png\>
+![Case 4-4](images/Case-4/fig-4.png)
 
 The value of `TadaSHC.Tag` is stored in the `VBFrame` stream.
 
