@@ -131,7 +131,7 @@ Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files.
 
 ### [Bonus] Document Structure Analysis ([HWP](tutorials/hwp-analysis/) / [DOC](tutorials/doc-analysis/) / [HWPX](tutorials/hwpx-analysis/))
 
-Analyze HWP document structures, metadata, embedded files, OLE objects, macros/scripts, and suspicious content. Automatic stream decompression, password-protected document decryption, and distribution document decryption are also supported.
+Analyze HWP document structures, metadata, embedded files, OLE objects, macros/scripts, and suspicious content. Automatic stream decompression and Distribution Document decryption are supported, along with password recovery and decryption for encrypted documents.
 
 ![HWP Structure Analysis](docs/images/hwp-analysis.png)
 ---
