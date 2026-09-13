@@ -1,11 +1,25 @@
 # Changelog
 
+## v1.7.0
+
+### Features
+- Document structure analysis (HWPX)
+  - HWPX metadata analysis
+  - ZIP package / XML structure analysis
+  - Keyword search for XML content
+  - Suspicious content identification
+  - Embedded file / OLE object analysis
+  - Distribution document decryption
+  - Encrypted document decryption
+    - Password-based decryption
+    - Brute-force password recovery
+    - Dictionary-based password recovery
+
 ## v1.6.0
 
 ### Features
 
 - Document structure analysis (DOC)
-
   - DOC metadata analysis
   - CFB storage / stream analysis
   - Embedded file / OLE object analysis
