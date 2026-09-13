@@ -8,6 +8,8 @@ and demonstrate how **PE Explorer+** can be used to efficiently perform
 static analysis, with a particular focus on VBA macro extraction and
 deobfuscation.
 
+---
+
 ## Case 1
 
 ![Case 1-1](images/Case-1/fig-1.png)
@@ -41,6 +43,8 @@ the **Deobfuscated** view.
 
 With the unnecessary comments removed, the resulting source code is significantly more readable, making the actual macro logic easier to inspect.
 
+---
+
 ## Case 2
 
 ![Case 2-1](images/Case-2/fig-1.png)
@@ -69,6 +73,8 @@ propagation**.
 As a result, many statically resolvable expressions are simplified
 automatically, making the macro's behavior easier to understand without
 manually reconstructing each string.
+
+---
 
 ## Case 3
 
@@ -116,6 +122,8 @@ other PE-related metadata.
 
 This makes it possible to move directly from analyzing the malicious
 document to inspecting its embedded executable payload.
+
+---
 
 ## Case 4
 
