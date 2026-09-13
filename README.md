@@ -33,20 +33,19 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.6.0)
+## ✨ What's New (v1.7.0)
 
-- **[Bonus]** Document structure analysis (DOC) · [Tutorial](tutorials/doc-analysis/)
-  - DOC metadata analysis
-  - CFB storage / stream analysis
+- **[Bonus]** Document structure analysis (HWPX) · [Tutorial](tutorials/hwpx-analysis/)
+  - HWPX metadata analysis
+  - ZIP package / XML structure analysis
+  - Keyword search for XML content
+  - Suspicious content identification
   - Embedded file / OLE object analysis
-  - VBA macro identification and extraction
-  - VBA macro source code viewer
-  - Static VBA macro deobfuscation
-    - Constant folding and propagation
-    - Obfuscated string reconstruction
-    - Common VBA expression and built-in function evaluation
-    - Simple control-flow simplification
-  - Suspicious macro behavior identification
+  - Distribution document decryption
+  - Encrypted document decryption
+    - Password-based decryption
+    - Brute-force password recovery
+    - Dictionary-based password recovery
 ---
 
 ## Features
@@ -61,7 +60,7 @@ It combines essential PE inspection features with compiler identification, embed
 * .NET Metadata Viewer
 * Go Metadata Viewer
 * **[Bonus]** ELF structure analysis (ELF32 / ELF64)
-* **[Bonus]** Document structure analysis (HWP / DOC)
+* **[Bonus]** Document structure analysis (HWP / DOC / HWPX)
 
 ---
 
@@ -130,9 +129,9 @@ Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files.
 ![ELF Viewer](docs/images/elf.png)
 
 
-### [Bonus] Document Structure Analysis ([HWP](tutorials/hwp-analysis/) / [DOC](tutorials/doc-analysis/))
+### [Bonus] Document Structure Analysis ([HWP](tutorials/hwp-analysis/) / [DOC](tutorials/doc-analysis/) / [HWPX](tutorials/hwpx-analysis/))
 
-Analyze HWP document structures, metadata, embedded files, OLE objects, macros/scripts, and suspicious content. Automatic stream decompression and distribution document decryption are also supported.
+Analyze HWP document structures, metadata, embedded files, OLE objects, macros/scripts, and suspicious content. Automatic stream decompression, password-protected document decryption, and distribution document decryption are also supported.
 
 ![HWP Structure Analysis](docs/images/hwp-analysis.png)
 ---
