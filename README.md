@@ -33,19 +33,19 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.7.0)
+## ✨ What's New (v1.8.0)
 
-- **[Bonus]** Document structure analysis (HWPX) · [Tutorial](tutorials/hwpx-analysis/)
-  - HWPX metadata analysis
-  - ZIP package / XML structure analysis
+- **[Bonus]** Document structure analysis (DOCX) · [Tutorial](tutorials/docx-analysis/)
+  - DOCX metadata analysis
+  - ZIP package / OOXML structure analysis
   - Keyword search for XML content
+  - External relationship analysis
+  - VBA macro identification and extraction
+  - VBA macro source code viewer
+  - Static VBA macro deobfuscation
   - Suspicious content identification
   - Embedded file / OLE object analysis
-  - Distribution document decryption
-  - Encrypted document decryption
-    - Password-based decryption
-    - Brute-force password recovery
-    - Dictionary-based password recovery
+  - ActiveX object analysis
 ---
 
 ## Features
@@ -60,7 +60,7 @@ It combines essential PE inspection features with compiler identification, embed
 * .NET Metadata Viewer
 * Go Metadata Viewer
 * **[Bonus]** ELF structure analysis (ELF32 / ELF64)
-* **[Bonus]** Document structure analysis (HWP / DOC / HWPX)
+* **[Bonus]** Document structure analysis (HWP / DOC / HWPX / DOCX)
 
 ---
 
@@ -129,7 +129,7 @@ Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files.
 ![ELF Viewer](docs/images/elf.png)
 
 
-### [Bonus] Document Structure Analysis ([HWP](tutorials/hwp-analysis/) / [DOC](tutorials/doc-analysis/) / [HWPX](tutorials/hwpx-analysis/))
+### [Bonus] Document Structure Analysis ([HWP](tutorials/hwp-analysis/) / [DOC](tutorials/doc-analysis/) / [HWPX](tutorials/hwpx-analysis/) / [DOCX](tutorials/docx-analysis/))
 
 Analyze HWP document structures, metadata, embedded files, OLE objects, macros/scripts, and suspicious content. Automatic stream decompression and Distribution Document decryption are supported, along with password recovery and decryption for encrypted documents.
 
