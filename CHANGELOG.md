@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.8.0
+
+### Features
+
+- Document structure analysis (DOCX)
+  - DOCX metadata analysis
+  - ZIP package / OOXML structure analysis
+  - Keyword search for XML content
+  - External relationship analysis
+  - VBA macro identification and extraction
+  - VBA macro source code viewer
+  - Static VBA macro deobfuscation
+  - Suspicious content identification
+  - Embedded file / OLE object analysis
+  - ActiveX object analysis
+
 ## v1.7.0
 
 ### Features
