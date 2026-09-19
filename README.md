@@ -55,10 +55,10 @@ It combines essential PE inspection features with compiler identification, embed
 * Embedded PE detection and dumping
 * Digital signature verification
 * UPX unpacking
-* Advanced Strings Viewer
-* Resource Viewer
-* .NET Metadata Viewer
-* Go Metadata Viewer
+* Advanced strings viewer
+* Resource viewer
+* .NET metadata viewer
+* Go metadata viewer
 * **[Bonus]** ELF structure analysis (ELF32 / ELF64)
 * **[Bonus]** Document structure analysis (HWP / DOC / HWPX / DOCX)
 
