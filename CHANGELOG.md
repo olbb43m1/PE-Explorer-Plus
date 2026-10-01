@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.9.0
+
+### Features
+
+- LNK structure analysis
+  - LNK metadata analysis
+  - Shell Link structure analysis
+  - Target and command-line argument analysis
+  - Shell Item IDList analysis
+  - ExtraData block analysis
+  - Embedded and overlay data identification
+  - Overlay extraction
+  - Encoded / obfuscated argument decoding
+  - Suspicious content identification
+  - LNK exploit detection
+    - CVE-2010-2568
+    - CVE-2017-8464
+    - CVE-2025-9491
+
 ## v1.8.0
 
 ### Features
