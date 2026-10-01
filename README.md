@@ -33,19 +33,22 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.8.0)
+## ✨ What's New (v1.9.0)
 
-- **[Bonus]** Document structure analysis (DOCX) · [Tutorial](tutorials/docx-analysis/)
-  - DOCX metadata analysis
-  - ZIP package / OOXML structure analysis
-  - Keyword search for XML content
-  - External relationship analysis
-  - VBA macro identification and extraction
-  - VBA macro source code viewer
-  - Static VBA macro deobfuscation
+- **[Bonus]** LNK structure analysis · [Tutorial](tutorials/lnk-analysis/)
+  - LNK metadata analysis
+  - Shell Link structure analysis
+  - Target and command-line argument analysis
+  - Shell Item IDList analysis
+  - ExtraData block analysis
+  - Embedded and overlay data identification
+  - Overlay extraction
+  - Encoded / obfuscated argument decoding
   - Suspicious content identification
-  - Embedded file / OLE object analysis
-  - ActiveX object analysis
+  - LNK exploit detection
+    - CVE-2010-2568
+    - CVE-2017-8464
+    - CVE-2025-9491
 ---
 
 ## Features
@@ -61,7 +64,7 @@ It combines essential PE inspection features with compiler identification, embed
 * Go metadata viewer
 * **[Bonus]** ELF structure analysis (ELF32 / ELF64)
 * **[Bonus]** Document structure analysis (HWP / DOC / HWPX / DOCX)
-
+* **[Bonus]** LNK structure analysis
 ---
 
 ## Screenshots
@@ -134,6 +137,13 @@ Analyze ELF metadata, symbols, imports/exports, relocations, and embedded files.
 Analyze HWP document structures, metadata, embedded files, OLE objects, macros/scripts, and suspicious content. Automatic stream decompression and Distribution Document decryption are supported, along with password recovery and decryption for encrypted documents.
 
 ![HWP Structure Analysis](docs/images/hwp-analysis.png)
+
+### [Bonus] LNK Structure Analysis · [Tutorial](tutorials/lnk-analysis/)
+
+Analyze Windows Shortcut (LNK) structures, targets, arguments, Shell Items, ExtraData, overlays, and suspicious content. Known LNK exploit detection is also supported.
+
+![LNK Structure Analysis](docs/images/lnk-analysis.png)
+
 ---
 
 ## Quick Demo
