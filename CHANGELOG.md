@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.9.1
+
+### Features
+
+- Enhanced LNK target path analysis
+  - Added support for LinkInfo, EnvironmentVariableDataBlock, and RelativePath
+
 ## v1.9.0
 
 ### Features
