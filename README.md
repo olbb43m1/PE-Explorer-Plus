@@ -33,22 +33,10 @@ It combines essential PE inspection features with compiler identification, embed
 
 ---
 
-## ✨ What's New (v1.9.0)
+## ✨ What's New (v1.9.1)
 
-- **[Bonus]** LNK structure analysis · [Tutorial](tutorials/lnk-analysis/)
-  - LNK metadata analysis
-  - Shell Link structure analysis
-  - Target and command-line argument analysis
-  - Shell Item IDList analysis
-  - ExtraData block analysis
-  - Embedded and overlay data identification
-  - Overlay extraction
-  - Encoded / obfuscated argument decoding
-  - Suspicious content identification
-  - LNK exploit detection
-    - CVE-2010-2568
-    - CVE-2017-8464
-    - CVE-2025-9491
+- Enhanced LNK target path analysis
+  - Added support for LinkInfo, EnvironmentVariableDataBlock, and RelativePath
 ---
 
 ## Features
